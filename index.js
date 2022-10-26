@@ -1,4 +1,4 @@
-let folder = "/Sounds/";
+let folder = "../Sounds/";
 let sounds = ["bruh", "directed", "ea-sports", "rick-astley", "roblox"];
 let extension = ".mp3";
 
@@ -8,7 +8,7 @@ for(let i = 0; i < 5; i++) {
     card.className = "card";
     container.appendChild(card);
 
-    let cardTitleParent = document.createElement("div");
+    let cardTitleParent = document.createElement("body");
     cardTitleParent.className = "card-title-parent";
     card.appendChild(cardTitleParent);
 
