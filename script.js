@@ -15,8 +15,19 @@ let vader = [
 "destroyyou",
 "apology",
 "dontfail",
+"truth",
 "breath"
 ];
+
+let palpatine = [
+"evil laugh",
+"good! laugh",
+"full power",
+"as forseen",
+"force disturb",
+"full power dark",
+"turn to dark"
+]
 
 let luke = [
 "force strong family",
@@ -35,8 +46,23 @@ let luke = [
 "not afraid"
 ]
 
-let vehicle = [
-"74-Z Shift"
+let yoda = [
+"beware dark",
+"do or not",
+"feel force",
+"force kownledge",
+"unlearn learn",
+"you fail"
+]
+
+let windu = [
+    "cloud judge",
+    "end this",
+    "force with us",
+    "not time",
+    "on council",
+    "stay out",
+    "you lost"
 ]
 
 let misc = [
@@ -47,6 +73,8 @@ let misc = [
 "WILHELM 5",
 "WILHELM 6",
 "LIGHTSABER BATTLE",
+"SABER (OBIvVader)",
+"SABER (LUKvVader)",
 "BLASTER FIGHT",
 "RICOCHET",
 "LONG BURST",
@@ -113,16 +141,26 @@ function stopPlaying() {
         audio.pause();
         audio.currentTime = 0;
     })
+    palpatine.forEach(sound => {
+        const audio = document.getElementById(sound);
+        audio.pause();
+        audio.currentTime = 0;
+    })
     luke.forEach(sound => {
         const audio = document.getElementById(sound);
         audio.pause();
         audio.currentTime = 0;
     })
-    // vehicle.forEach(sound => {
-    //     const audio = document.getElementById(sound);
-    //     audio.pause();
-    //     audio.currentTime = 0;
-    // })
+    yoda.forEach(sound => {
+        const audio = document.getElementById(sound);
+        audio.pause();
+        audio.currentTime = 0;
+    })
+    windu.forEach(sound => {
+        const audio = document.getElementById(sound);
+        audio.pause();
+        audio.currentTime = 0;
+    })
     misc.forEach(sound => {
         const audio = document.getElementById(sound);
         audio.pause();
@@ -141,9 +179,11 @@ function stopPlaying() {
 }
 
 createList("/Sounds/vader/", vader, "Vader", ".wav")
+createList("/Sounds/palpatine/", palpatine, "Palpatine", ".wav")
 createList("/Sounds/stormtrooper/", stormtrooper, "Stormtrooper", ".wav")
 createList("/Sounds/luke/", luke, "Luke", ".wav?raw=true")
+createList("/Sounds/yoda/", yoda, "Yoda", ".wav?raw=true")
+createList("/Sounds/windu/", windu, "Windu", ".wav?raw=true")
 createList("/Sounds/rebel/", rebel, "Rebel", ".wav")
-// createList("sounds/vehicle/", vehicle, "Vehicle", ".wav")
 createList("/Sounds/misc/", misc, "Misc", ".wav")
 
