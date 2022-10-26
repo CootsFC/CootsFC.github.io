@@ -1,4 +1,5 @@
 let vader = [
+"breath",
 "underestimate force",
 "not jedi",
 "your father",
@@ -8,15 +9,22 @@ let vader = [
 "dont know darkside",
 "power darkside",
 "failed admiral",
-"impressive",
 "takecare myself",
-"unfair",
 "destiny",
 "destroy you",
-"apology",
+"honored join",
+"lack faith",
 "dont fail",
+"apology",
+"impressive",
+"unfair",
 "truth",
-"breath"
+"yes",
+"correct",
+"good work",
+"no",
+"what!",
+"as you wish"
 ];
 
 let palpatine = [
@@ -25,24 +33,37 @@ let palpatine = [
 "full power dark",
 "as forseen",
 "force disturb",
-"turn to dark"
+"turn to dark",
+"rebel crushed",
+"clear feelings"
+"so be it",
+"you sure",
+"patience",
+"yessss",
+"oh no"
 ]
 
 let luke = [
 "force strong family",
-"mistaken",
-"vader strong dark",
+"won't convert",
+"stronger dark",
 "NO!(dying)",
 "force to kill me",
 "jedi like father",
 "not fight father",
-"got him",
 "why i'm here",
 "save you",
-"whats the matter",
 "let go of hate",
+"not afraid",
 "dont do",
-"not afraid"
+"keep tight",
+"know you mean",
+"allright",
+"no!",
+"got him",
+"whats the matter",
+"cmon",
+"hang on"
 ]
 
 let yoda = [
@@ -51,18 +72,43 @@ let yoda = [
 "feel force",
 "force kownledge",
 "unlearn learn",
-"you fail"
+"you fail",
+"no different",
+"laugh",
+"oh laugh",
+"ahhh",
+"no"
+
+
 ]
 
 let windu = [
-    "cloud judge",
-    "end this",
-    "force with us",
-    "not time",
-    "on council",
-    "stay out",
-    "you lost"
+"cloud judge",
+"end this",
+"force with us",
+"not time",
+"on council",
+"stay out",
+"party over",
+"you lost",
+"don't think so",
+"take seat",
+"no"
+
 ]
+
+let quigon = [
+"morning",
+"remember",
+"concentration here",
+"greed ally",
+"speak not intelligent",
+"much to learn",
+"don't touch",
+"don't sense"
+]
+
+
 
 let misc = [
 "WILHELM 1",
@@ -71,6 +117,7 @@ let misc = [
 "WILHELM 4",
 "WILHELM 5",
 "WILHELM 6",
+"no blasters!",
 "LIGHTSABER BATTLE",
 "SABER (OBIvVader)",
 "SABER (LUKvVader)",
@@ -160,6 +207,11 @@ function stopPlaying() {
         audio.pause();
         audio.currentTime = 0;
     })
+    quigon.forEach(sound => {
+        const audio = document.getElementById(sound);
+        audio.pause();
+        audio.currentTime = 0;
+    })
     misc.forEach(sound => {
         const audio = document.getElementById(sound);
         audio.pause();
@@ -183,6 +235,7 @@ createList("/Sounds/stormtrooper/", stormtrooper, "Stormtrooper", ".wav")
 createList("/Sounds/luke/", luke, "Luke", ".wav")
 createList("/Sounds/yoda/", yoda, "Yoda", ".wav")
 createList("/Sounds/windu/", windu, "Windu", ".wav")
+createList("/Sounds/quigon/", quigon, "Quigon", ".wav")
 createList("/Sounds/rebel/", rebel, "Rebel", ".wav")
 createList("/Sounds/misc/", misc, "Misc", ".wav")
 
