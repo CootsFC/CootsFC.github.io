@@ -14,7 +14,8 @@ let vader = [
 "destiny",
 "destroyyou",
 "apology",
-"dontfail"
+"dontfail",
+"breath"
 ];
 
 let luke = [
@@ -47,8 +48,12 @@ let misc = [
 "WILHELM 6",
 "LIGHTSABER BATTLE",
 "BLASTER FIGHT",
+"RICOCHET",
+"LONG BURST",
+"EXPLOSION",
 "SPEEDER BIKE",
-"AT-AT WALK"
+"AT-AT WALK",
+"AT-AT FALL"
 ]
 
 let stormtrooper = [
