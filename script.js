@@ -1,20 +1,20 @@
 let vader = [
-"estimateforce",
-"notjedi",
-"yourfather",
-"powerdarkside",
+"estimate force",
+"not jedi",
+"your father",
 "NOO(death)",
-"joinruletogether",
-"forcewithluke",
-"dontknowdarkside",
-"failedadmiral",
+"rule together",
+"force with luke",
+"dont know darkside",
+"power darkside",
+"failed admiral",
 "impressive",
-"takecaremyself",
+"takecare myself",
 "unfair",
 "destiny",
-"destroyyou",
+"destroy you",
 "apology",
-"dontfail",
+"dont fail",
 "truth",
 "breath"
 ];
@@ -22,10 +22,9 @@ let vader = [
 let palpatine = [
 "evil laugh",
 "good! laugh",
-"full power",
+"full power dark",
 "as forseen",
 "force disturb",
-"full power dark",
 "turn to dark"
 ]
 
