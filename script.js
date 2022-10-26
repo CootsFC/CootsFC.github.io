@@ -135,10 +135,10 @@ function stopPlaying() {
     })
 }
 
-createList("../sounds/vader/", vader, "Vader", ".wav")
-createList("../sounds/stormtrooper/", stormtrooper, "Stormtrooper", ".wav")
-createList("../sounds/luke/", luke, "Luke", ".wav")
-createList("../sounds/rebel/", rebel, "Rebel", ".wav")
+createList("https://github.com/CootsFC/CootsFC.github.io/blob/main/sounds/vader/", vader, "Vader", ".wav")
+createList("https://github.com/CootsFC/CootsFC.github.io/blob/main/sounds/stormtrooper/", stormtrooper, "Stormtrooper", ".wav")
+createList("https://github.com/CootsFC/CootsFC.github.io/blob/main/sounds/luke/", luke, "Luke", ".wav")
+createList("https://github.com/CootsFC/CootsFC.github.io/blob/main/sounds/rebel/", rebel, "Rebel", ".wav")
 // createList("sounds/vehicle/", vehicle, "Vehicle", ".wav")
-createList("../sounds/misc/", misc, "Misc", ".wav")
+createList("https://github.com/CootsFC/CootsFC.github.io/blob/main/sounds/misc/", misc, "Misc", ".wav")
 
