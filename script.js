@@ -1,5 +1,5 @@
 let vader = [
-"estimate force",
+"underestimate force",
 "not jedi",
 "your father",
 "NOO(death)",
@@ -180,9 +180,9 @@ function stopPlaying() {
 createList("/Sounds/vader/", vader, "Vader", ".wav")
 createList("/Sounds/palpatine/", palpatine, "Palpatine", ".wav")
 createList("/Sounds/stormtrooper/", stormtrooper, "Stormtrooper", ".wav")
-createList("/Sounds/luke/", luke, "Luke", ".wav?raw=true")
-createList("/Sounds/yoda/", yoda, "Yoda", ".wav?raw=true")
-createList("/Sounds/windu/", windu, "Windu", ".wav?raw=true")
+createList("/Sounds/luke/", luke, "Luke", ".wav")
+createList("/Sounds/yoda/", yoda, "Yoda", ".wav")
+createList("/Sounds/windu/", windu, "Windu", ".wav")
 createList("/Sounds/rebel/", rebel, "Rebel", ".wav")
 createList("/Sounds/misc/", misc, "Misc", ".wav")
 
