@@ -135,10 +135,10 @@ function stopPlaying() {
     })
 }
 
-createList("sounds/vader/", vader, "Vader", ".wav")
-createList("sounds/stormtrooper/", stormtrooper, "Stormtrooper", ".wav")
-createList("sounds/luke/", luke, "Luke", ".wav")
-createList("sounds/rebel/", rebel, "Rebel", ".wav")
+createList("../sounds/vader/", vader, "Vader", ".wav")
+createList("../sounds/stormtrooper/", stormtrooper, "Stormtrooper", ".wav")
+createList("../sounds/luke/", luke, "Luke", ".wav")
+createList("../sounds/rebel/", rebel, "Rebel", ".wav")
 // createList("sounds/vehicle/", vehicle, "Vehicle", ".wav")
-createList("sounds/misc/", misc, "Misc", ".wav")
+createList("../sounds/misc/", misc, "Misc", ".wav")
 
