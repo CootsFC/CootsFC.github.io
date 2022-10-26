@@ -35,7 +35,7 @@ let palpatine = [
 "force disturb",
 "turn to dark",
 "rebel crushed",
-"clear feelings"
+"clear feelings",
 "so be it",
 "you sure",
 "patience",
@@ -78,7 +78,6 @@ let yoda = [
 "oh laugh",
 "ahhh",
 "no"
-
 
 ]
 
