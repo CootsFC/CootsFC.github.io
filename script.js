@@ -174,9 +174,9 @@ function createList(path, soundList, title, ext) {
         btn.innerText = sound;
         btn.addEventListener('click', () => {
             stopPlaying();
-            document.getElementById(sound).play();
+            document.getElementById(title+"-"+sound).play();
         })
-        document.getElementById(title).append(btn);
+        document.getElementById(title+"-"+sound).append(btn);
     })
 }
 
