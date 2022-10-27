@@ -1,4 +1,4 @@
-let vader = [
+const vader = [
 "breath",
 "underestimate force",
 "not jedi",
@@ -27,7 +27,7 @@ let vader = [
 "as you wish"
 ];
 
-let palpatine = [
+const palpatine = [
 "evil laugh",
 "good! laugh",
 "full power dark",
@@ -43,7 +43,7 @@ let palpatine = [
 "oh no"
 ]
 
-let luke = [
+const luke = [
 "force strong family",
 "won't convert",
 "stronger dark",
@@ -53,7 +53,7 @@ let luke = [
 "not fight father",
 "why i'm here",
 "save you",
-"let go of hate",
+"const go of hate",
 "not afraid",
 "dont do",
 "keep tight",
@@ -66,7 +66,7 @@ let luke = [
 "hang on"
 ]
 
-let yoda = [
+const yoda = [
 "beware dark",
 "do or not",
 "feel force",
@@ -77,11 +77,11 @@ let yoda = [
 "laugh",
 "oh laugh",
 "ahhh",
-"no 3"
+"no"
 
 ]
 
-let windu = [
+const windu = [
 "cloud judge",
 "end this",
 "force with us",
@@ -92,11 +92,11 @@ let windu = [
 "you lost",
 "don't think so",
 "take seat",
-"no 2"
+"no"
 
 ]
 
-let quigon = [
+const quigon = [
 "morning",
 "remember",
 "concentration here",
@@ -109,7 +109,7 @@ let quigon = [
 
 
 
-let misc = [
+const misc = [
 "WILHELM 1",
 "WILHELM 2",
 "WILHELM 3",
@@ -129,7 +129,7 @@ let misc = [
 "AT-AT FALL"
 ]
 
-let stormtrooper = [
+const stormtrooper = [
 "load weapons",
 "regular reports",
 "blast them",
@@ -143,7 +143,7 @@ let stormtrooper = [
 "we have them"
 ]
 
-let rebel = [
+const rebel = [
 "in position",
 "on target",
 "this is it",
@@ -154,7 +154,7 @@ let rebel = [
 
 
 function createList(path, soundList, title, ext) {
-    let container = document.querySelector(".mainBody");
+    const container = document.querySelector(".mainBody");
     const htitle = document.createElement("div");
     const h3 = document.createElement("h3");
     h3.innerText = title;
@@ -165,9 +165,9 @@ function createList(path, soundList, title, ext) {
     container.appendChild(htitle)
     container.appendChild(buttonCont)
     soundList.forEach(sound => {
-        let card = document.createElement("audio");
+        const card = document.createElement("audio");
         card.setAttribute("src", path + sound + ext);
-        card.setAttribute("id", sound);
+        card.setAttribute("id", title+"-"+sound);
         container.appendChild(card);
         const btn = document.createElement('button');
         btn.classList.add('btn');
@@ -181,60 +181,31 @@ function createList(path, soundList, title, ext) {
 }
 
 function stopPlaying() {
-    vader.forEach(sound => {
-        const audio = document.getElementById(sound);
+    function stop(soundList, title) {
+        soundList.forEach(sound => {
+        const audio = document.getElementById(title+"-"+sound);
         audio.pause();
         audio.currentTime = 0;
     })
-    palpatine.forEach(sound => {
-        const audio = document.getElementById(sound);
-        audio.pause();
-        audio.currentTime = 0;
-    })
-    luke.forEach(sound => {
-        const audio = document.getElementById(sound);
-        audio.pause();
-        audio.currentTime = 0;
-    })
-    yoda.forEach(sound => {
-        const audio = document.getElementById(sound);
-        audio.pause();
-        audio.currentTime = 0;
-    })
-    windu.forEach(sound => {
-        const audio = document.getElementById(sound);
-        audio.pause();
-        audio.currentTime = 0;
-    })
-    quigon.forEach(sound => {
-        const audio = document.getElementById(sound);
-        audio.pause();
-        audio.currentTime = 0;
-    })
-    misc.forEach(sound => {
-        const audio = document.getElementById(sound);
-        audio.pause();
-        audio.currentTime = 0;
-    })
-    stormtrooper.forEach(sound => {
-        const audio = document.getElementById(sound);
-        audio.pause();
-        audio.currentTime = 0;
-    })
-    rebel.forEach(sound => {
-        const audio = document.getElementById(sound);
-        audio.pause();
-        audio.currentTime = 0;
-    })
+    }
+    stop(vader, "vader")
+    stop(palpatine, "palpatine")
+    stop(luke, "luke")
+    stop(yoda, "yoda")
+    stop(windu, "windu")
+    stop(quigon, "quigon")
+    stop(misc, "misc")
+    stop(rebel, "rebel")
+    stop(stormtrooper, "stormtrooper")
 }
 
-createList("/Sounds/vader/", vader, "Vader", ".wav")
-createList("/Sounds/palpatine/", palpatine, "Palpatine", ".wav")
-createList("/Sounds/stormtrooper/", stormtrooper, "Stormtrooper", ".wav")
-createList("/Sounds/luke/", luke, "Luke", ".wav")
-createList("/Sounds/yoda/", yoda, "Yoda", ".wav")
-createList("/Sounds/windu/", windu, "Windu", ".wav")
-createList("/Sounds/quigon/", quigon, "Quigon", ".wav")
-createList("/Sounds/rebel/", rebel, "Rebel", ".wav")
-createList("/Sounds/misc/", misc, "Misc", ".wav")
+createList("/Sounds/vader/", vader, "vader", ".wav")
+createList("/Sounds/palpatine/", palpatine, "palpatine", ".wav")
+createList("/Sounds/stormtrooper/", stormtrooper, "stormtrooper", ".wav")
+createList("/Sounds/luke/", luke, "luke", ".wav")
+createList("/Sounds/yoda/", yoda, "yoda", ".wav")
+createList("/Sounds/windu/", windu, "windu", ".wav")
+createList("/Sounds/quigon/", quigon, "quigon", ".wav")
+createList("/Sounds/rebel/", rebel, "rebel", ".wav")
+createList("/Sounds/misc/", misc, "misc", ".wav")
 
