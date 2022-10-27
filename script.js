@@ -176,7 +176,7 @@ function createList(path, soundList, title, ext) {
             stopPlaying();
             document.getElementById(title+"-"+sound).play();
         })
-        document.getElementById(title+"-"+sound).append(btn);
+        document.getElementById(title).append(btn);
     })
 }
 
