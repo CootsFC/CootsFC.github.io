@@ -77,7 +77,7 @@ let yoda = [
 "laugh",
 "oh laugh",
 "ahhh",
-"no"
+"no 3"
 
 ]
 
@@ -92,7 +92,7 @@ let windu = [
 "you lost",
 "don't think so",
 "take seat",
-"no"
+"no 2"
 
 ]
 
