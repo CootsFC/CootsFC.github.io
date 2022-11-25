@@ -53,7 +53,7 @@ const luke = [
 "not fight father",
 "why i'm here",
 "save you",
-"const go of hate",
+"go of hate",
 "not afraid",
 "dont do",
 "keep tight",
